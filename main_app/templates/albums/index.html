@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block content %}
+
+<h2>Albums</h2>
+
+{% for album in albums %}
+<div class="card">
+    <!-- add this single line below -->
+    <a href="{% url 'detail' album.id %}">
+        <div class="card-content">
+            <div class="index-imgwrapper">
+                <img src="{{ album.img }}" alt="{{ album.name }}"/>
+            </div>
+            <div class="index-description">
+                <p>{{ album.name }}</p>
+                <p>{{ album.artist }}</p>
+                <p>{{ album.genre }}</p>
+                <p>{{ album.description }}</p>
+            </div>
+        </div>
+      <!-- and this following one as well -->
+    </a>
+  </div>
+{% endfor %} {% endblock %}
