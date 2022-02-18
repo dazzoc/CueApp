@@ -1,6 +1,6 @@
 > # Cue Music App
 > 
-A simple web application that returns color information baseded apon the user inputing a Hex code. A good way to practice 0-F Hex code and learn more information on the color.
+A web application where users can track their music. Users can add the albums they are listening to, add the date they listened to it on and witch device they used to listen to the album.
 ___
 ## Technologies Used
 - Python
@@ -11,18 +11,19 @@ ___
 - JavaScript
 - Materialize
 - Google Fonts
+- Font Awesome Icons
 ___
 ## Screenshots
 
-![Imgur](https://i.imgur.com/1b71oIt.png)
+![Imgur](https://i.imgur.com/BrU4ZjB.png)
+![Imgur](https://i.imgur.com/1dCMESU.png)
 
-![Screenshot](https://i.imgur.com/sgMIDYC.png)
 
 ___
 ## Getting Started
 [Click Here](https://dazzoc.github.io/Hex-Color-App/) to see my deployed app!
 ___
 ## Future Enhancements
-- Responsive design for mobile 
-- option to input CMYK, or RGB code
-- The ablility to favorit and save the color to localstorage
+- Users can Cue up a playlist
+- Users can search music by Artist, Album, Genre
+- API to play songs
