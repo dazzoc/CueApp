@@ -14,6 +14,8 @@ ___
 - Font Awesome Icons
 ___
 ## Screenshots
+___
+## Wireframe
 
 ![Imgur](https://i.imgur.com/BrU4ZjB.png)
 ![Imgur](https://i.imgur.com/1dCMESU.png)
