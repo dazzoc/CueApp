@@ -65,8 +65,8 @@ main {
 
 .action-btn:hover {
     transition: all 0.2s ease-in-out;
-    background-color: #f9f9f9;
-    color: #252525;
+    background-color: #0092f3;
+    color: #f9f9f9;
 }
 
 .action-btn > a:hover {
@@ -82,6 +82,7 @@ main {
     border: none;
     background-color: #f9f9f9;
     color: #252525;
+    cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 
@@ -92,13 +93,13 @@ main {
 
 .action-btn-dark:hover {
     transition: all 0.2s ease-in-out;
-    background-color: #252525;
+    background-color: #0092f3;
     color: #f9f9f9;
 }
 
-.action-btn-dark > a:hover {
+/* .action-btn-dark > a:hover {
     color: #f9f9f9;
-}
+} */
 
 /* ==============================Albums Detail=================== */
 
@@ -158,4 +159,28 @@ td {
 .table-wrapper {
     height: 260px;
     overflow: scroll;
+}
+
+.datepicker-date-display {
+    background-color: #0092f3;
+}
+
+.datepicker-day-button {
+    /* background-color: #0092f3; */
+}
+
+.datepicker-cancel, .datepicker-done {
+    color: #0092f3;
+}
+
+.select-dropdown {
+    color: #f9f9f9;
+}
+
+.dropdown-content, li {
+    color: #0092f3;
+}
+
+#id_date {
+    color: #f9f9f9;
 }

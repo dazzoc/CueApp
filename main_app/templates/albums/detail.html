@@ -13,12 +13,8 @@
                 <p class="album-des">{{ album.discription }}</p>
             </div>
             <div class="album-action">
-                <button class="action-btn-dark">
-                    <a href="{% url 'albums_update' album.id %}">Update</a>
-                </button>
-                <button class="action-btn-dark">
-                    <a href="{% url 'albums_delete' album.id %}">Delete</a>
-                </button>
+                <a href="{% url 'albums_update' album.id %}"><button class="action-btn-dark">Update</button></a>
+                <a href="{% url 'albums_delete' album.id %}"><button class="action-btn-dark">Delete</button></a>
             </div>
         </div>
     </div>
