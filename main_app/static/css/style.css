@@ -2,15 +2,96 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: whitesmoke;
 }
 
 main {
     flex: 1 0 auto;
+}
+
+/* =======================index================================ */
+
+.album-card {
+    width: 700px;
+    height: 190px;
+    background-color: #252525;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.album-card > a{
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.card-content {
+    display: flex;
+}
+
+.index-img {
+    width: 170px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.index-name {
+    font-size: 26px;
+    
+}
+
+/* ==============================Buttons===================== */
+
+.action-btn {
+    width: 80px;
+    height: 30px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: #252525;
+    color: #f9f9f9;
+    transition: all 0.2s ease-in-out;
+}
+
+.action-btn > a {
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+.action-btn:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #f9f9f9;
+    color: #252525;
+}
+
+.action-btn > a:hover {
+    color: #252525;
+}
+
+/* ==============================Albums Detail=================== */
+
+.row {
+    display: flex;
+}
+
+.col1 {
+    margin-right: 40px;
+}
+
+.album-img {
+    width: 300px;
+}
+
+.album-name {
+    margin: 10px 0;
+}
+
+.album-des {
+    width: 280px;
+    margin: 10px 0px;
 }
