@@ -73,18 +73,53 @@ main {
     color: #252525;
 }
 
+.action-btn-dark {
+    width: 80px;
+    height: 30px;
+    border-radius: 50px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    background-color: #f9f9f9;
+    color: #252525;
+    transition: all 0.2s ease-in-out;
+}
+
+.action-btn-dark > a {
+    text-decoration: none;
+    color: #252525;
+}
+
+.action-btn-dark:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #252525;
+    color: #f9f9f9;
+}
+
+.action-btn-dark > a:hover {
+    color: #f9f9f9;
+}
+
 /* ==============================Albums Detail=================== */
 
 .row {
     display: flex;
+    background-color: #252525;
+    width: 610px;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .col1 {
-    margin-right: 40px;
+    margin-right: 20px;
+    color: #f9f9f9;
+    padding-right: 20px;
+    border-right: 2px solid #f9f9f9;
 }
 
 .album-img {
     width: 300px;
+    border-radius: 5px;
 }
 
 .album-name {
@@ -94,4 +129,33 @@ main {
 .album-des {
     width: 280px;
     margin: 10px 0px;
+}
+
+.detail-devices-title {
+    color: #f9f9f9;
+}
+
+label {
+    color: #f9f9f9;
+}
+
+lable, .active {
+    color: #f9f9f9;
+}
+
+.listening-form {
+    margin-top: 40px;
+}
+
+.striped {
+    color: #f9f9f9;
+}
+
+td {
+    padding: 10px;
+}
+
+.table-wrapper {
+    height: 260px;
+    overflow: scroll;
 }
