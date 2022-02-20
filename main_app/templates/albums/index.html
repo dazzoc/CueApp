@@ -3,18 +3,17 @@
 <h2>Albums</h2>
 
 {% for album in albums %}
-<div class="card">
+<div class="album-card">
     <!-- add this single line below -->
     <a href="{% url 'detail' album.id %}">
         <div class="card-content">
             <div class="index-imgwrapper">
-                <img src="{{ album.img }}" alt="{{ album.name }}"/>
+                <img src="{{ album.img }}" alt="{{ album.name }}" class="index-img"/>
             </div>
-            <div class="index-description">
-                <p>{{ album.name }}</p>
-                <p>{{ album.artist }}</p>
-                <p>{{ album.genre }}</p>
-                <p>{{ album.description }}</p>
+            <div class="index-discription">
+                <p class="index-name">{{ album.name }}</p>
+                <p class="index-artist">{{ album.artist }}</p>
+                <p class="index-genre">{{ album.genre }}</p>
             </div>
         </div>
       <!-- and this following one as well -->

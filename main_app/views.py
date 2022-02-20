@@ -78,7 +78,7 @@ def assoc_device(request, album_id, device_id):
 
 class AlbumCreate(LoginRequiredMixin, CreateView):
     model = Album
-    fields = ('name', 'img', 'artist', 'genre', 'description')
+    fields = ('name', 'img', 'artist', 'genre', 'discription')
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super().form_valid(form)
@@ -86,7 +86,7 @@ class AlbumCreate(LoginRequiredMixin, CreateView):
 
 class AlbumUpdate(LoginRequiredMixin, UpdateView):
     model = Album
-    fields = ('name', 'img', 'artist', 'genre', 'description')
+    fields = ('name', 'img', 'artist', 'genre', 'discription')
     def dispatch(self, request, *args, **kwargs):
         obj = self.get_object()
         if obj.user != self.request.user:

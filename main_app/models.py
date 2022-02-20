@@ -22,7 +22,7 @@ class Device(models.Model):
 # Create your models here.
 class Album(models.Model):
     name = models.CharField(max_length=100)
-    img = models.CharField(max_length=100)
+    img = models.CharField(max_length=250)
     artist = models.CharField(max_length=100)
     genre = models.CharField(max_length=50)
     discription = models.TextField(max_length=250)
@@ -36,13 +36,12 @@ class Album(models.Model):
         return reverse('detail', kwargs={'album_id': self.id})
 
 class Listening(models.Model):
-    date = models.DateField('Feeding Date')
+    date = models.DateField('Last Listened')
     mood = models.CharField(
         max_length=1,
         choices=MOODS,
         default=MOODS[0][0],
     )
-    # Create a cat_id FK
     album = models.ForeignKey(Album, on_delete=models.CASCADE)
 
     def __str__(self):
