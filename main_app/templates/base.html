@@ -20,28 +20,28 @@
 
     <header class="header">
         <section>
-            <div class="head-wrapper">
+            <div class="head-wrapper" id="head">
                 <ul class="head-left">
                     <li>
                         <a href="/" class="logo">Cue</a>
                     </li>
                 </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
                 <ul class="head-right">
-                    <div class="hamburger">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
                     <li class="navLinks"><a href="{% url 'about' %}">About</a></li>
                     <li class="navLinks"><a href="{% url 'contact' %}">Contact</a></li>
-                    {% if user.is_authenticated %}
+                        {% if user.is_authenticated %}
                     <li class="navLinks"><a href="{% url 'index' %}">Your Music</a></li>
                     <li class="navLinks"><a href="{% url 'albums_create' %}">Add Music</a></li>
                     <li class="navLinks"><a href="{% url 'logout' %}">Log Out</a></li>
-                    {% else %}
+                        {% else %}
                     <li class="navLinks"><a href="{% url 'login' %}">Log In</a></li>
                     <li class="navLinks"><a href="{% url 'signup' %}">Sign Up</a></li>
-                    {% endif %}
+                        {% endif %}
                 </ul>
             </div>
         </section>
@@ -56,7 +56,29 @@
         </div>
     </footer>
 
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navList = document.querySelector('.head-right');
+    const links = document.querySelectorAll('.head-right li');
+    const nav = document.querySelector('#head');
+    let userScrollY = window.scrollY;
 
+    window.addEventListener('scroll', () => {
+    if (userScrollY < window.scrollY) {
+        nav.classList.add("navHidden");
+    } else {
+        nav.classList.remove("navHidden");
+    }
+    userScrollY = window.scrollY;
+});
+
+    hamburger.addEventListener('click', () => {
+    navList.classList.toggle('open');
+    links.forEach(link => {
+        link.classList.toggle('fade');
+    })
+});
+</script>
 </body>
 
 </html>
