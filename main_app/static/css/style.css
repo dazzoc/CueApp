@@ -13,6 +13,9 @@ body {
 
 main {
     flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 9rem;
 }
 
 /* =======================index================================ */
@@ -78,6 +81,7 @@ main {
     height: 30px;
     border-radius: 50px;
     margin-right: 10px;
+    margin-top: 20px;
     outline: none;
     border: none;
     background-color: #f9f9f9;
@@ -97,9 +101,6 @@ main {
     color: #f9f9f9;
 }
 
-/* .action-btn-dark > a:hover {
-    color: #f9f9f9;
-} */
 
 /* ==============================Albums Detail=================== */
 
@@ -115,7 +116,7 @@ main {
     margin-right: 20px;
     color: #f9f9f9;
     padding-right: 20px;
-    border-right: 2px solid #f9f9f9;
+    border-right: 2px solid #d0c8b5;
 }
 
 .album-img {
@@ -130,6 +131,7 @@ main {
 .album-des {
     width: 280px;
     margin: 10px 0px;
+    color: #d0c8b5;
 }
 
 .detail-devices-title {
@@ -159,6 +161,7 @@ td {
 .table-wrapper {
     height: 260px;
     overflow: scroll;
+    margin-top: 20px;
 }
 
 .datepicker-date-display {
@@ -183,4 +186,16 @@ td {
 
 #id_date {
     color: #f9f9f9;
+}
+
+.add-album-form {
+    background-color: #252525;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+    height: 450px;
+}
+
+#id_name {
+
 }
