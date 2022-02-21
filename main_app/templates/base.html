@@ -8,38 +8,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CUE WORLDWIDE</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7da09f600b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
 
 </head>
 
 <body>
 
-    <header class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-                <ul>
+    <header class="header">
+        <section>
+            <div class="head-wrapper">
+                <ul class="head-left">
                     <li>
-                        <a href="/" class="left brand-logo">Cue</a>
+                        <a href="/" class="logo">Cue</a>
                     </li>
                 </ul>
-                <ul class="right">
-                    <li><a href="{% url 'about' %}">About</a></li>
-                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                <ul class="head-right">
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <li class="navLinks"><a href="{% url 'about' %}">About</a></li>
+                    <li class="navLinks"><a href="{% url 'contact' %}">Contact</a></li>
                     {% if user.is_authenticated %}
-                    <li><a href="{% url 'index' %}">Your Music</a></li>
-                    <li><a href="{% url 'albums_create' %}">Add Music</a></li>
-                    <li><a href="{% url 'logout' %}">Log Out</a></li>
+                    <li class="navLinks"><a href="{% url 'index' %}">Your Music</a></li>
+                    <li class="navLinks"><a href="{% url 'albums_create' %}">Add Music</a></li>
+                    <li class="navLinks"><a href="{% url 'logout' %}">Log Out</a></li>
                     {% else %}
-                    <li><a href="{% url 'login' %}">Log In</a></li>
-                    <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                    <li class="navLinks"><a href="{% url 'login' %}">Log In</a></li>
+                    <li class="navLinks"><a href="{% url 'signup' %}">Sign Up</a></li>
                     {% endif %}
                 </ul>
             </div>
-        </nav>
+        </section>
     </header>
     <main class="container">
         {% block content %}
