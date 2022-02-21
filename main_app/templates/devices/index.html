@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block content %}
+
+<h4>Devices</h4>
+
+{% for device in devices %}
+<div class="devices-card">
+    <!-- add this single line below -->
+    <a href="{% url 'devices_detail' device.id %}">
+      <div class="card-content">
+        <span class="device-index-name">{{ device.name }}</span>
+        <div class="device-index-img">{{ device.img }}</div>
+      </div>
+      <!-- and this following one as well -->
+    </a>
+  </div>
+{% endfor %} {% endblock %}

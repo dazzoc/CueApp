@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1>{{ device.name }}'s Details</h1>
+
+<div class="device-detail-card">
+  <div class="card-content">
+    <span class="device-detail-name">{{ device.name }}</span>
+    <div>{{ device.img }}</div>
+    <div class="device-detail-action">
+        <a href="{% url 'devices_update' device.id %}" class="action-btn-dark">Update</a>
+        <a href="{% url 'devices_delete' device.id %}" class="action-btn-dark">Delete</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
