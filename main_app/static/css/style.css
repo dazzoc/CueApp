@@ -250,6 +250,46 @@ input.select-dropdown.dropdown-trigger {
 
 }
 
+/* ====================== footer ============================ */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 250px;
+    background-color: yellow;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+.foot-links {
+    display: flex;
+}
+
+.foot-links p {
+    margin: 5px;
+    font-size: 16px;
+}
+
+.foot-terms {
+    display: flex;
+}
+
+.foot-terms p {
+    margin: 5px;
+}
+
+.copyright {
+    margin: 5px;
+}
+
+/* ======================== Medias =========================== */
+
 @media screen and (min-width: 1200px){
     .add-album-form {
         background-color: #252525;

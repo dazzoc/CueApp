@@ -50,9 +50,22 @@
         {% block content %}
         {% endblock %}
     </main>
-    <footer class="page-footer">
-        <div class="right">
-            All Rights Reserved, &copy; 2022 Cue Music App &nbsp;
+    <footer class="footer">
+        <div><a href="/" class="foot-logo">Cue</a></div>
+        <div class="foot-links">
+            <p><a href="{% url 'about' %}">About</a></p>
+            <p><a href="{% url 'contact' %}">Contact</a></p>
+        </div>
+        <div class="foot-terms">
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Services</p>
+        </div>
+        <div class="socal">
+
+        </div>
+        <div class="copyright">
+            All Rights Reserved, &copy; 2022 Cue Music App
         </div>
     </footer>
 
