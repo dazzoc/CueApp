@@ -45,7 +45,11 @@ main {
 }
 
 .head-left {
-    margin-left: 3rem;
+    margin-left: 2rem;
+}
+
+.logo {
+    width: 100px;
 }
 
 .head-right {

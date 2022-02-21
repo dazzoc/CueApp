@@ -23,7 +23,9 @@
             <div class="head-wrapper" id="head">
                 <ul class="head-left">
                     <li>
-                        <a href="/" class="logo">Cue</a>
+                        <a href="/">
+                            {% include 'cue.html' %}
+                        </a>
                     </li>
                 </ul>
                 <div class="hamburger">
@@ -51,7 +53,7 @@
         {% endblock %}
     </main>
     <footer class="footer">
-        <div><a href="/" class="foot-logo">Cue</a></div>
+        <div><a href="/" class="foot-logo">{% include 'cue.html' %}</a></div>
         <div class="foot-links">
             <p><a href="{% url 'about' %}">About</a></p>
             <p><a href="{% url 'contact' %}">Contact</a></p>
