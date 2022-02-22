@@ -1,5 +1,14 @@
 {% extends 'base.html' %} {% block content %}
-
-<h1>Home /ᐠ｡‸｡ᐟ\ﾉ</h1>
+<div class="home-container">
+    <h1 class="home-header">Welcome</h1>
+    <h5 class="home-subtitle">Track your music your way</h5>
+    <div class="btn-wrapper">
+        {% if user.is_authenticated %}
+        <a href="{% url 'index' %}"><button class="home-btn">Get Started ></button></a>
+        {% else %}
+        <a href="{% url 'signup' %}"><button class="home-btn">Get Started ></button></a>
+        {% endif %}
+    </div>
+</div>
 
 {% endblock %}

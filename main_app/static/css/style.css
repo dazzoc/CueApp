@@ -8,7 +8,6 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
 }
 
 main {
@@ -42,6 +41,7 @@ main {
 .head-wrapper a {
     color: #000;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 
 .head-left {
@@ -68,6 +68,43 @@ main {
     transform: translateY(-100px);
 }
 
+/* ======================== HOME ============================= */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-header {
+    font-size: 64px;
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 800;
+}
+
+.home-subtitle {
+    font-size: 16px;
+    margin: 5px 0 20px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-btn {
+    width: 115px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.home-btn:hover {
+    background-color: violet;
+    color: #f9f9f9;
+    transition: all 0.2s ease-in-out;
+}
 /* =======================index================================ */
 
 .album-card {
@@ -81,6 +118,7 @@ main {
 .album-card > a{
     color: #f9f9f9;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .card-content {
@@ -109,6 +147,7 @@ main {
     background-color: #252525;
     color: #f9f9f9;
     transition: all 0.2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
 }
 
 .action-btn > a {
@@ -138,6 +177,7 @@ main {
     color: #252525;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
 }
 
 .action-btn-dark > a {
@@ -167,6 +207,7 @@ main {
     color: #f9f9f9;
     padding-right: 20px;
     border-right: 2px solid #d0c8b5;
+    font-family: 'Poppins', sans-serif;
 }
 
 .album-img {
@@ -190,6 +231,7 @@ main {
 
 label {
     color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
 }
 
 lable, .active {
@@ -212,6 +254,7 @@ td {
     height: 260px;
     overflow: scroll;
     margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .datepicker-date-display {
@@ -248,10 +291,7 @@ input.select-dropdown.dropdown-trigger {
     padding: 20px;
     width: 500px;
     height: 450px;
-}
-
-#id_name {
-
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ====================== footer ============================ */
@@ -273,6 +313,7 @@ input.select-dropdown.dropdown-trigger {
 
 .foot-links {
     display: flex;
+    font-family: 'Poppins', sans-serif;
 }
 
 .foot-links p {
