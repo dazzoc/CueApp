@@ -5,32 +5,40 @@
 }
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
     background-image: url(https://i.imgur.com/JCKA9go.jpg);
+    background-color: rgb(255, 182, 243);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-main {
-    flex: 1 0 auto;
-    margin: 0;
+.head-wrapper, .container, .footer {
+    flex-shrink: 0;
+}
+
+.container {
+    grid-area: main;
     display: flex;
-    justify-content: center;
+    width: 100%;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    min-height: 1000px;
-    width: 100vw;
-    margin-right: 0;
-    padding: 0;
+    margin: 9rem 0;
 }
 
 
 /* ======================== Nav =============================== */
 
 .head-wrapper {
-    position: fixed;
     grid-area: header;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -118,7 +126,6 @@ main {
 .index-wrapper {
     width: 700px;
     padding: 20px;
-    /* margin: 150px 0; */
     background-color: #252525;
     border-radius: 8px;
 }
@@ -276,7 +283,6 @@ main {
     background-color: #252525;
     width: 610px;
     padding: 15px;
-    margin: 150px 0;
     border-radius: 8px;
 }
 
@@ -287,6 +293,7 @@ main {
     border-right: 2px solid #d0c8b5;
     font-family: 'Poppins', sans-serif;
 }
+
 
 .album-img {
     width: 300px;
@@ -461,6 +468,7 @@ input.select-dropdown.dropdown-trigger {
 /* ====================== footer ============================ */
 
 .footer {
+    grid-area: footer;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -583,5 +591,48 @@ input.select-dropdown.dropdown-trigger {
 
     li.fade {
         opacity: 1;
+    }
+
+    .row {
+        width: 610px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+    }
+
+    .col1 {
+        border-right: none;
+        border-bottom: 2px solid #d0c8b5;
+        width: 80vw;
+        margin: 0 0 40px 0;
+        padding: 0;
+    }
+
+    .album-img {
+        width: 80vw;
+    }
+
+    .img-wrapper {
+        width: 80vw;
+    }
+
+    .album-des {
+        width: 80vw;
+        height: 60px;
+    }
+
+    .album-action {
+        margin-bottom: 20px;
+    }
+
+    .col2 {
+        width: 80vw;
     }
 }
