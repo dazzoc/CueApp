@@ -1,8 +1,12 @@
 {% extends 'base.html' %} {% block content %}
 {% load static %}
 <div class="index-wrapper">
-    <h4>Albums</h4>
-
+    <div class="title-wrapper">
+        <h4 class="index-title">Albums</h4>
+        <a href="{% url 'albums_create' %}" class="index-a">
+            <div class="index-add-btn">+</div>
+        </a>
+    </div>
     {% for album in albums %}
     <div class="album-card">
         <!-- add this single line below -->

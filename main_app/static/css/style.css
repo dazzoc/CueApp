@@ -107,12 +107,56 @@ main {
 }
 /* =======================index================================ */
 
+.index-wrapper {
+    width: 740px;
+    padding: 20px;
+    background-color: #252525;
+    border-radius: 8px;
+}
+
+.index-title {
+    color: #f9f9f9;
+    font-weight: 600;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.index-a {
+    color: #f9f9f9;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: #42413e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    white-space: nowrap;
+    border: none;
+    outline: none;
+}
+
+.index-a:hover {
+    filter: brightness(1.5);
+}
+
+.index-add-btn {
+    font-size: 40px;
+    position: relative;
+    bottom: 2px;
+}
+
 .album-card {
     width: 700px;
     height: 190px;
-    background-color: #252525;
+    background-color: #42413e;
     padding: 10px;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .album-card > a{
@@ -216,13 +260,27 @@ main {
 }
 
 .album-name {
+    font-size: 20px;
     margin: 10px 0;
 }
 
 .album-des {
     width: 280px;
+    height: 70px;
+    overflow: scroll;
     margin: 10px 0px;
     color: #d0c8b5;
+}
+
+.detail-add-btn {
+    font-size: 40px;
+    color: #f9f9f9;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    position: relative;
+    bottom: 4px;
+    cursor: pointer;
 }
 
 .detail-devices-title {
@@ -293,6 +351,27 @@ input.select-dropdown.dropdown-trigger {
     height: 450px;
     font-family: 'Poppins', sans-serif;
 }
+
+#id_name {
+    color: #f9f9f9;
+}
+
+#id_img {
+    color: #f9f9f9;
+}
+
+#id_artist {
+    color: #f9f9f9;
+}
+
+#id_genre {
+    color: #f9f9f9;
+}
+
+#id_discription {
+    color: #f9f9f9;
+}
+
 
 /* ====================== footer ============================ */
 
