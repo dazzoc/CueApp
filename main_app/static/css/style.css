@@ -8,15 +8,21 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    justify-content: center;
+    background-image: url(https://i.imgur.com/JCKA9go.jpg);
 }
 
 main {
     flex: 1 0 auto;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 850px;
-    width: 100%;
+    height: 100vh;
+    min-height: 1000px;
+    width: 100vw;
+    margin-right: 0;
+    padding: 0;
 }
 
 
@@ -110,8 +116,9 @@ main {
 /* =======================index================================ */
 
 .index-wrapper {
-    width: 740px;
+    width: 700px;
     padding: 20px;
+    /* margin: 150px 0; */
     background-color: #252525;
     border-radius: 8px;
 }
@@ -153,7 +160,7 @@ main {
 }
 
 .album-card {
-    width: 700px;
+    width: 660px;
     height: 190px;
     background-color: #42413e;
     padding: 10px;
@@ -179,13 +186,31 @@ main {
 
 .index-name {
     font-size: 26px;
-    
 }
 
 /* =========================== Device Index ================= */
 
 .index-device-img {
-    height: 170px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.device-index-name {
+    font-size: 26px;
+    color: #f9f9f9;
+}
+
+.divice-card {
+    width: 660px;
+    height: 120px;
+    background-color: #42413e;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.divice-card, a {
+    color: #f9f9f9;
 }
 
 /* ==============================Buttons===================== */
@@ -251,6 +276,7 @@ main {
     background-color: #252525;
     width: 610px;
     padding: 15px;
+    margin: 150px 0;
     border-radius: 8px;
 }
 
@@ -396,6 +422,11 @@ input.select-dropdown.dropdown-trigger {
     height: 18px;
 }
 
+.detail-device {
+    height: 18px;
+    margin-right: 10px;
+}
+
 .device-btn {
     cursor: pointer;
     width: 40px;
@@ -510,7 +541,7 @@ input.select-dropdown.dropdown-trigger {
         height: 1000px;
         top: 0;
         z-index: 998;
-        background-color: lightpink;
+        background-color: rgb(255, 182, 243);
         transform: translateX(100%);
         transition: all .5s ease-in-out;
     }
