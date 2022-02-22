@@ -34,15 +34,15 @@
                     <div class="line"></div>
                 </div>
                 <ul class="head-right">
-                    <li class="navLinks"><a href="{% url 'about' %}">About</a></li>
-                    <li class="navLinks"><a href="{% url 'contact' %}">Contact</a></li>
+                    <li class="navLinks"><a href="{% url 'about' %}" class="about">About</a></li>
+                    <li class="navLinks"><a href="{% url 'contact' %}" class="contact">Contact</a></li>
                         {% if user.is_authenticated %}
-                    <li class="navLinks"><a href="{% url 'index' %}">Your Music</a></li>
-                    <li class="navLinks"><a href="{% url 'albums_create' %}">Add Music</a></li>
-                    <li class="navLinks"><a href="{% url 'logout' %}">Log Out</a></li>
+                    <li class="navLinks"><a href="{% url 'index' %}" class="music">Music</a></li>
+                    <li class="navLinks"><a href="{% url 'devices_index' %}">Devices</a></li>
+                    <li class="navLinks"><a href="{% url 'logout' %}" class="logout">Log Out</a></li>
                         {% else %}
-                    <li class="navLinks"><a href="{% url 'login' %}">Log In</a></li>
-                    <li class="navLinks"><a href="{% url 'signup' %}">Sign Up</a></li>
+                    <li class="navLinks"><a href="{% url 'login' %}" class="login">Log In</a></li>
+                    <li class="navLinks"><a href="{% url 'signup' %}" class="signup">Sign Up</a></li>
                         {% endif %}
                 </ul>
             </div>

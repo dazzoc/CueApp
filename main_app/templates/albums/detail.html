@@ -7,8 +7,8 @@
                 <img class="album-img" src="{{ album.img }}" alt="{{ album.name }}">
             </div>
             <div class="album-info">
-                <h4 class="album-name">{{ album.name }}</h4>
                 <p class="album-artist">{{ album.artist }}</p>
+                <h4 class="album-name">{{ album.name }}</h4>
                 <p class="album-genre">{{ album.genre }}</p>
                 <p class="album-des">{{ album.discription }}</p>
             </div>
@@ -21,17 +21,19 @@
     <div class="col2">
         <div class="row-1">
             <div class="detail-devices">
-                <span class="detail-devices-title">Listening On</span>
+                <span class="detail-devices-title">Listening On :</span>
                 {% for device in album.devices.all %}
-                <span class="detail-device-btn">{{ device.img }}</span>
+                <img src="{{ device.img }}" alt="{{ device.name }}" class="detail-device-btn">
                 {% endfor %}
             </div>
             <div class="avalible-devices">
                 {% for device in devices.all %}
-                <div class="card-action">
-                    <form action="{% url 'assoc_device' album.id device.id %}" method="post">
+                <div class="detail-card-action">
+                    <form action="{% url 'assoc_device' album.id device.id %}" method="post" class="device-form-detail">
                         {% csrf_token %}
-                        <button type="submit" class="device-btn">{{ device.img }}</button>
+                        <button type="submit" class="device-btn">
+                            <img src="{{ device.img }}" alt="{{ device.name }}" class="detail-device-btn">
+                        </button>
                     </form>
                 </div>
                 {% endfor %}

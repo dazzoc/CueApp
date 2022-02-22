@@ -9,7 +9,6 @@
     </div>
     {% for album in albums %}
     <div class="album-card">
-        <!-- add this single line below -->
         <a href="{% url 'detail' album.id %}">
             <div class="card-content">
                 <div class="index-imgwrapper">
@@ -21,7 +20,6 @@
                     <p class="index-genre">{{ album.genre }}</p>
                 </div>
             </div>
-        <!-- and this following one as well -->
         </a>
     </div>
     {% endfor %} 
