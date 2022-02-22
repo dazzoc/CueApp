@@ -208,6 +208,7 @@ body {
 }
 
 .divice-card {
+    display: flex;
     width: 660px;
     height: 120px;
     background-color: #42413e;
@@ -216,8 +217,20 @@ body {
     margin-bottom: 10px;
 }
 
+.divice-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 640px;
+}
+
 .divice-card, a {
     color: #f9f9f9;
+}
+
+/* =========================== Device Detail ================= */
+
+.device-action {
 }
 
 /* ==============================Buttons===================== */

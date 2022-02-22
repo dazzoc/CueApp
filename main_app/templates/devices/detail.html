@@ -2,12 +2,16 @@
 
 <div class="index-wrapper">
     <div class="divice-card">
-        <div class="card-content">
+        <div class="divice-card-content">
             <div class="index-imgwrapper">
                 <img src="{{ device.img }}" alt="{{ device.name }}" class="index-device-img"/>
             </div>
             <div class="index-discription">
                 <p class="device-index-name">{{ device.name }}</p>
+            </div>
+            <div class="device-action">
+                <a href="{% url 'devices_update' device.id %}"><button class="action-btn-dark">Update</button></a>
+                <a href="{% url 'devices_delete' device.id %}"><button class="action-btn-dark">Delete</button></a>
             </div>
         </div>
     </div>
