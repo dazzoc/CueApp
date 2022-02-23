@@ -1,7 +1,9 @@
 {% extends 'base.html' %} {% block content %}
 <div class="home-container">
-    <h1 class="home-header">Cue</h1>
-    <h5 class="home-subtitle">About us</h5>
+    <div class="about-wrapper">
+        {% include 'cue.html' %}
+        <p class="about-subtitle">A Music Tracking App where users can log their albums, and share when they listened and what on.</p>
+    </div>  
 </div>
 
 {% endblock %}
