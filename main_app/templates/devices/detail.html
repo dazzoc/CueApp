@@ -1,13 +1,13 @@
 {% extends 'base.html' %} {% block content %}
 
-<div class="device-index-wrapper">
-    <div class="divice-card">
-        <div class="divice-card-content">
-            <div class="index-imgwrapper">
-                <img src="{{ device.img }}" alt="{{ device.name }}" class="index-device-img"/>
+<div class="device-detail-wrapper">
+    <div class="device-detail-card">
+        <div class="device-detail-content">
+            <div class="device-detail-imgwrapper">
+                <img src="{{ device.img }}" alt="{{ device.name }}" class="detail-device-img"/>
             </div>
-            <div class="index-discription">
-                <p class="device-index-name">{{ device.name }}</p>
+            <div class="device-detail-discription">
+                <p class="device-detail-name">{{ device.name }}</p>
             </div>
             <div class="device-action">
                 <a href="{% url 'devices_update' device.id %}"><button class="action-btn-dark">Update</button></a>

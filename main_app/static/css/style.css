@@ -47,7 +47,8 @@ body {
     align-items: center;
     top: 0;
     z-index: 1;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: #feb6ed;
     transition: 0.2s ease-in-out;
 }
 
@@ -97,16 +98,17 @@ body {
 }
 
 .home-header {
-    font-size: 64px;
+    font-size: 72px;
     margin: 0;
     font-family: 'Mukta', sans-serif;
     font-weight: 800;
 }
 
 .home-subtitle {
-    font-size: 16px;
+    font-size: 20px;
     margin: 5px 0 20px 0;
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 .home-btn {
@@ -116,6 +118,7 @@ body {
     border: none;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
+    white-space: nowrap;
     transition: all 0.2s ease-in-out;
 }
 
@@ -299,7 +302,38 @@ body {
 
 /* =========================== Device Detail ================= */
 
-.device-action {
+.device-detail-wrapper {
+    width: 295px;
+    height: 320px;
+    background-color: #252525;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.device-detail-card {
+    width: 275px;
+    height: 300px;
+    background-color: #42413e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.device-detail-content {
+    text-align: center;
+}
+
+.detail-device-img {
+    width: 150px;
+}
+
+.device-detail-name {
+    color: #f9f9f9;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ==============================Buttons===================== */
@@ -372,7 +406,7 @@ body {
     margin-right: 20px;
     color: #f9f9f9;
     padding-right: 20px;
-    border-right: 2px solid #d0c8b5;
+    border-right: 2px solid #b6b5b3;;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -400,7 +434,7 @@ body {
     height: 105px;
     overflow: scroll;
     margin: 10px 0px;
-    color: #d0c8b5;
+    color: #b6b5b3;
 }
 
 .detail-add-btn {
@@ -620,6 +654,7 @@ input.select-dropdown.dropdown-trigger {
         position: absolute;
         right: 5%;
         z-index: 999;
+        color: #f9f9f9;
     }
 
     .head-right {
@@ -633,7 +668,8 @@ input.select-dropdown.dropdown-trigger {
         height: 1000px;
         top: 0;
         z-index: 998;
-        background-color: rgb(255, 182, 243);
+        /* background-color: rgb(255, 182, 243); */
+        background-color: yellow;
         transform: translateX(100%);
         transition: all .5s ease-in-out;
     }
@@ -642,6 +678,7 @@ input.select-dropdown.dropdown-trigger {
         position: relative;
         bottom: 50px;
         font-size: 26px;
+        font-weight: 500;
         margin: 40px;
     }
 
@@ -750,11 +787,15 @@ input.select-dropdown.dropdown-trigger {
         width: 90vw;
         height: 100vh;
     }
+
+    .index-name {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .album-card {
-        height: 55vh;
+        height: 75vh;
     }
 
     .card-content {
@@ -781,10 +822,23 @@ input.select-dropdown.dropdown-trigger {
 
 @media screen and (max-width: 340px) {
     .album-card {
-        height: 45vh;
+        height: 55vh;
     }
 
     .divice-index-name {
         font-size: 16px;
+    }
+
+    .footer {
+        height: 300px;
+    }
+
+    .foot-terms {
+        display: block;
+        text-align: center;
+    }
+
+    .copyright {
+        text-align: center;
     }
 }
