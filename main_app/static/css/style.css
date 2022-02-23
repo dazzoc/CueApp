@@ -91,6 +91,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 600px;
 }
 
 .home-header {
@@ -117,9 +119,40 @@ body {
 }
 
 .home-btn:hover {
-    background-color: violet;
+    background-color: #0092f3;
     color: #f9f9f9;
     transition: all 0.2s ease-in-out;
+}
+
+/* =====================Contact================================ */
+
+.contact-form {
+    width: 350px;
+    height: 400px;
+    background-color: #252525;
+    border-radius: 8px;
+    color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-header {
+    font-size: 60px;
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.name-section, .email-section, .comment-section {
+    width: 90%;
+}
+
+.name-input, .email-input, .comment-input {
+    color: #f9f9f9;
 }
 /* =======================index================================ */
 
@@ -205,6 +238,7 @@ body {
 .device-index-name {
     font-size: 26px;
     color: #f9f9f9;
+    margin-right: 20px;
 }
 
 .divice-card {
@@ -219,13 +253,20 @@ body {
 
 .divice-card-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 640px;
 }
 
 .divice-card, a {
     color: #f9f9f9;
+}
+
+.divice-index-name {
+    font-size: 26px;
+}
+
+.device-action {
+    display: flex;
 }
 
 /* =========================== Device Detail ================= */
@@ -609,6 +650,32 @@ input.select-dropdown.dropdown-trigger {
     .row {
         width: 610px;
     }
+
+    .index-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+    }
+
+    .album-card {
+        width: 80vw;
+    }
+
+    .divice-card {
+        width: 80vw;
+    }
+
+    .divice-card-content {
+        width: 80vw;
+    }
+
+    .title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80vw;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -647,5 +714,30 @@ input.select-dropdown.dropdown-trigger {
 
     .col2 {
         width: 80vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .album-card {
+        height: 55vh;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .index-img {
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .album-card {
+        height: 45vh;
+    }
+
+    .divice-index-name {
+        font-size: 16px;
     }
 }

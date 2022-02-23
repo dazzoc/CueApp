@@ -11,12 +11,12 @@
     {% for device in devices %}
     <div class="divice-card">
         <a href="{% url 'devices_detail' device.id %}">
-            <div class="card-content">
+            <div class="divice-card-content">
                 <div class="index-imgwrapper">
                     <img src="{{ device.img }}" alt="{{ device.name }}" class="index-device-img"/>
                 </div>
                 <div class="index-discription">
-                    <p class="index-name">{{ device.name }}</p>
+                    <p class="divice-index-name">{{ device.name }}</p>
                 </div>
             </div>
         </a>

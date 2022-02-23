@@ -1,5 +1,20 @@
 {% extends 'base.html' %} {% block content %}
-
-<h1>Contact Us</h1>
+<div class="home-container">
+    <form action="" class="contact-form">
+        <h1 class="contact-header">Contact Us</h1>
+        <section class="name-section">
+            <legend class="name-title">Name:</legend>
+            <input type="text" class="name-input">
+        </section>
+        <section class="email-section">
+            <legend class="email-title">Email:</legend>
+            <input type="text" class="email-input">
+        </section>
+        <section class="comment-section">
+            <legend class="comment-title">Comment:</legend>
+            <input type="text" class="comment-input">
+        </section>
+    </form>
+</div>
 
 {% endblock %}
