@@ -13,8 +13,6 @@ body {
     'header'
     'main'
     'footer';
-    /* background: url("../../static/imgs/background1.png") 0% 0% no-repeat fixed;
-    background-size: cover; */
     background-color: rgb(255, 182, 243);
     box-sizing: border-box;
     margin: 0;
