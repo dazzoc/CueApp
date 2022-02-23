@@ -13,7 +13,8 @@ body {
     'header'
     'main'
     'footer';
-    background-image: url(https://i.imgur.com/JCKA9go.jpg);
+    background: url("../../static/imgs/background1.png") 0% 0% no-repeat fixed;
+    background-size: cover;
     background-color: rgb(255, 182, 243);
     box-sizing: border-box;
     margin: 0;
@@ -128,7 +129,7 @@ body {
 
 .contact-form {
     width: 350px;
-    height: 400px;
+    height: 420px;
     background-color: #252525;
     border-radius: 8px;
     color: #f9f9f9;
@@ -154,6 +155,33 @@ body {
 .name-input, .email-input, .comment-input {
     color: #f9f9f9;
 }
+
+/* ======================= Login ============================== */
+
+#id_username, #id_password, #id_password1, #id_password2 {
+    color: #f9f9f9;
+}
+
+
+/* ======================Signup =============================== */
+
+.signup-form {
+    width: 550px;
+    height: 580px;
+    background-color: #252525;
+    border-radius: 8px;
+    color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.signup-inputs {
+    text-align: left;
+}
+
 /* =======================index================================ */
 
 .index-wrapper {
@@ -393,10 +421,12 @@ body {
 label {
     color: #f9f9f9;
     font-family: 'Poppins', sans-serif;
+    font-size: 14px;
 }
 
 lable, .active {
     color: #f9f9f9;
+    font-size: 14px;
 }
 
 .listening-form {
@@ -715,6 +745,11 @@ input.select-dropdown.dropdown-trigger {
     .col2 {
         width: 80vw;
     }
+
+    .signup-form {
+        width: 90vw;
+        height: 100vh;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -729,6 +764,18 @@ input.select-dropdown.dropdown-trigger {
 
     .index-img {
         width: 75vw;
+    }
+
+    .helptext {
+        font-size: 12px;
+    }
+
+    li {
+        font-size: 12px;
+    }
+
+    .signup-form {
+        padding: 20px;
     }
 }
 

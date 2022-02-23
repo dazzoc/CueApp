@@ -1,12 +1,12 @@
 {% extends 'base.html' %} {% block content %}
 
-<h1>Login</h1>
 
-<form action="{% url 'login' %}" method="POST">
+<form action="{% url 'login' %}" method="POST" class="contact-form">
+    <h1 class="contact-header">Login</h1>
     {% csrf_token %}
     {{ form.as_p }}
     <input type="hidden" name="next" value="{{ next }}" />
-    <input type="submit" value="login" class="btn blue"/> 
+    <input type="submit" value="login" class="action-btn-dark"/> 
 
 </form>
 
