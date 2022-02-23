@@ -14,6 +14,8 @@ ___
 - Font Awesome Icons
 ___
 ## Screenshots
+![Imgur](https://i.imgur.com/pd6Ypf2.png)
+![Imgur](https://i.imgur.com/ilenQx7.png)
 ___
 ## Wireframe
 
@@ -23,7 +25,7 @@ ___
 
 ___
 ## Getting Started
-[Click Here](https://dazzoc.github.io/Hex-Color-App/) to see my deployed app!
+[Click Here](https://cuemusicapp.herokuapp.com/) to see my deployed app!
 ___
 ## Future Enhancements
 - Users can Cue up a playlist
