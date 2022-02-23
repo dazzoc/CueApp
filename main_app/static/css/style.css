@@ -13,6 +13,8 @@ body {
     'header'
     'main'
     'footer';
+    /* background-image: url(https://i.imgur.com/JCKA9go.jpg) 0% 0% no-repeat fixed;
+    background-size: cover; */
     background-color: rgb(255, 182, 243);
     box-sizing: border-box;
     margin: 0;
@@ -216,10 +218,12 @@ body {
     white-space: nowrap;
     border: none;
     outline: none;
+    transition: all 0.2s ease-in-out;
 }
 
 .index-a:hover {
-    filter: brightness(1.5);
+    background-color: #5f5e59;
+    transition: all 0.2s ease-in-out;
 }
 
 .index-add-btn {
@@ -235,6 +239,12 @@ body {
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.album-card:hover {
+    background-color: #555450;
+    transition: all 0.2s ease-in-out;
 }
 
 .album-card > a{
@@ -563,6 +573,12 @@ input.select-dropdown.dropdown-trigger {
     border: none;
     outline: none;
     margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.device-btn:hover {
+    background-color: #5f5e59;
+    transition: all 0.2s ease-in-out;
 }
 
 .detail-devices {
@@ -577,9 +593,6 @@ input.select-dropdown.dropdown-trigger {
     margin-top: 15px;
 }
 
-.device-btn:hover {
-    filter: brightness(1.5);
-}
 
 /* ====================== footer ============================ */
 
